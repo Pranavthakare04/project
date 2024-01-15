@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+    <script>
+        // Function to handle the change event of the dropdown
+        function navigateToPage() {
+            // Get the selected value of the dropdown
+            var selectedValue = document.getElementById("dropdown").value;
+
+            // Redirect to the selected URL
+            window.location.href = selectedValue;
+        }
+    </script>
+    <style>
+         select {
+            background: url('dropdown-arrow.png') no-repeat right center; /* Add your arrow image or use a unicode arrow */
+            padding-right: 3px; /* Adjust as needed */
+        }
+
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #008a8d93;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #555;
+}
+    </style>
+
+</head>
+<body>
+    
+<div class="container">
+   
+
+   <nav>
+    <h1 class="heading"> music playlist</h1> 
+        <ul>
+          <li><a href="C:/Users/prana/Desktop/music%20gallery/index.html">Home</a></li>
+          <li><a href="C:/Users/prana/Desktop/music%20gallery/About%20Us.html">About Us</a></li>
+          <li><a href="C:/Users/prana/Desktop/music%20gallery/Feedback.html">Feedback</a></li>
+          <li><a> <label for="dropdown">Choose an Artist:</label>
+            <select id="dropdown" onchange="navigateToPage()">
+                <option></option>
+             <option value="C:/Users/prana/Desktop/music%20gallery/Travis%20Scott.html">Travis scott</option>
+              <option value="file:///C:/Users/prana/Desktop/music%20gallery/Metro%20Boomin.html">Metro Boomin</option>
+          <option value="C:/Users/prana/Desktop/music%20gallery/Weeknd.html">Weeknd</option>
+            </select></a></li>
+        </ul>
+      </nav>
+    
+
+    <div class="box-container">
+
+        <div class="box" data-src="images/music-1.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/album-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>NEFFEX cold</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/music-2.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/album-2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>rize up</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/music-3.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/album-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>arround the world</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/music-4.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/album-4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>THNK U jay someday</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/music-5.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/album-5.png" alt="">
+            </div>
+            <div class="content">
+                <h3>NEFFEX life</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/music-6.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/album-6.png" alt="">
+            </div>
+            <div class="content">
+                <h3>fun house</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Travis Scott  SICKO MODE ft Drake.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/travis.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>SICKO MODE</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Travis Scott  MY EYES Official Audio.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/travis.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> MY EYES</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Travis Scott  HIGHEST IN THE ROOM Official Music Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/travis.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> HIGHEST IN THE ROOM </h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Travis Scott  goosebumps ft Kendrick Lamar.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/travis.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>goosebumps</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Travis Scott  FEN Official Audio.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/travis.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> FE!N </h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/THE SCOTTS Travis Scott Kid Cudi  THE SCOTTS Audio.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Screenshot 2024-01-14 141531.png" alt="">
+            </div>
+            <div class="content">
+                <h3>The Scotts</h3>
+            </div>
+        </div>
+        
+        <div class="box" data-src="images/Trance.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/trance.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Trance.Metro Boomin</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Annihilate  SpiderMan Across the SpiderVerse.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/metro.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Annihilate</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Calling SpiderMan Across the SpiderVerse.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/metro.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> Metro Boomin.Calling </h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Creepin.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/metro.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> Creepin </h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Givin Up Not The One.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/metro.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Givin' Up (Not The One)</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Hummingbird.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/metro.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Hummingbird</h3>
+            </div>
+        </div>
+        
+        <div class="box" data-src="images/Blinding Lights Official Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Blinding Lights</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Die For You Remix Official Lyric Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> Die For You</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/One Of The Girls Official Audio.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> One of The Girls</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Popular.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Weeknd Popular</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Reminder Official Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> Weeknd Reminder</h3>
+            </div>
+        </div>
+        
+       <div class="box" data-src="images/Starboy ft Daft Punk Official Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Weeknd Starboy</h3>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="music-player">
+    <div id="close-player" class="fas fa-angle-up"></div>
+    <h3 class="music-title">(play your song)</h3>
+    <audio src="" controls></audio>
+</div>
+
+</body>
+</html>

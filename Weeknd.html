@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+    <script>
+        // Function to handle the change event of the dropdown
+        function navigateToPage() {
+            // Get the selected value of the dropdown
+            var selectedValue = document.getElementById("dropdown").value;
+
+            // Redirect to the selected URL
+            window.location.href = selectedValue;
+        }
+    </script>
+    <style>
+         select {
+            background: url('dropdown-arrow.png') no-repeat right center; /* Add your arrow image or use a unicode arrow */
+            padding-right: 3px; /* Adjust as needed */
+        }
+
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #008a8d93;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #555;
+}
+    </style>
+
+</head>
+<body>
+    
+<div class="container">
+   
+
+   <nav>
+    <h1 class="heading"> Weeknd </h1> 
+        <ul>
+          <li><a href="C:/Users/prana/Desktop/music%20gallery/index.html">Home</a></li>
+          <li><a href="C:/Users/prana/Desktop/music%20gallery/About%20Us.html">About Us</a></li>
+          <li><a href="C:/Users/prana/Desktop/music%20gallery/Feedback.html">Feedback</a></li>
+          <li><a> <label for="dropdown">Choose an Artist:</label>
+            <select id="dropdown" onchange="navigateToPage()">
+                <option></option>
+                <option value="C:/Users/prana/Desktop/music%20gallery/Travis%20Scott.html">Travis scott</option>
+                <option value="file:///C:/Users/prana/Desktop/music%20gallery/Metro%20Boomin.html">Metro Boomin</option>
+            <option value="C:/Users/prana/Desktop/music%20gallery/Weeknd.html">Weeknd</option>
+            </select></a></li>
+        </ul>
+      </nav>
+    
+
+    <div class="box-container">
+
+      
+        <div class="box" data-src="images/Blinding Lights Official Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Blinding Lights</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Die For You Remix Official Lyric Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> Die For You</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/One Of The Girls Official Audio.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> One of The Girls</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Popular.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Weeknd Popular</h3>
+            </div>
+        </div>
+
+        <div class="box" data-src="images/Reminder Official Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3> Weeknd Reminder</h3>
+            </div>
+        </div>
+        
+       <div class="box" data-src="images/Starboy ft Daft Punk Official Video.mp3">
+            <div class="image">
+                <div class="play">
+                    <i class="fas fa-play"></i>
+                </div>
+                <img src="images/Weeknd.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Weeknd Starboy</h3>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="music-player">
+    <div id="close-player" class="fas fa-angle-up"></div>
+    <h3 class="music-title">(play your song)</h3>
+    <audio src="" controls></audio>
+</div>
+
+</body>
+</html>
